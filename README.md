@@ -26,7 +26,16 @@ The application is exposed externally through an AWS Application Load Balancer.
 
 # Architecture
 
-![Architecture Diagram](images/Architectural-Diagram.png)
+The project follows an end-to-end CI/CD and GitOps workflow:
+
+1. **Terraform provisions the AWS infrastructure**, including the VPC, networking components, Amazon EKS cluster, Amazon ECR repository, Jenkins EC2 instance, and supporting IAM resources.
+2. Application code is pushed to **GitHub** for source control.
+3. A **GitHub webhook** triggers the Jenkins CI/CD pipeline when changes are pushed to the repository.
+4. **Jenkins** builds the Flask application into a Docker image.
+5. The Docker image is tagged and pushed to **Amazon ECR** for container image storage.
+6. **Helm** manages and templates the Kubernetes resources required to deploy the application.
+7. The containerized application is deployed to **Amazon EKS**, where Kubernetes manages the application workload and exposes it through a LoadBalancer service.
+8. As a GitOps enhancement, **Argo CD** monitors the Git repository for desired-state changes and automatically synchronizes those changes to the EKS cluster.
 
 ---
 
@@ -158,7 +167,7 @@ eks-cicd-pipeline/
 
 ## GitHub Webhook
 
-![GitHub Webhook](images/webhook.png)
+![GitHub Webhook](images/Webhook.png)
 
 ---
 
