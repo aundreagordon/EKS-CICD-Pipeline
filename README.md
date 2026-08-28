@@ -2,7 +2,7 @@
 
 > **End-to-End CI/CD Pipeline using Jenkins, Docker, Amazon ECR, Amazon EKS, Helm, and Terraform**
 
-![Architecture](images/architecture.png)
+![Architecture Diagram](images/Architectural%20Diagram.png)
 
 ---
 
@@ -26,7 +26,7 @@ The application is exposed externally through an AWS Application Load Balancer.
 
 # Architecture
 
-![Architecture Diagram](images/architecture.png)
+![Architecture Diagram](images/Architectural%20Diagram.png)
 
 ---
 
@@ -152,31 +152,31 @@ eks-cicd-pipeline/
 
 ## Jenkins Pipeline
 
-![Jenkins Pipeline](images/pipeline.png)
+![Jenkins Pipeline](images/Jenkins%20Pipeline%20Overview.png)
 
 ---
 
 ## GitHub Webhook
 
-![GitHub Webhook](images/webhook.png)
+![GitHub Webhook](images/GitHub%20Webhook%20Recent%20Deliveries.png)
 
 ---
 
 ## Kubernetes Deployment
 
-![Kubernetes Deployment](images/eks.png)
+![Kubernetes Deployment](images/AWS%20Console-%20EKS%20Cluster(2).png)
 
 ---
 
 ## Application
 
-![Application Output](images/hello1pu.png)
+![Application Output](images/%22Hello,%20World!%22.png)
 
 ---
 
 ## Amazon ECR Repository
 
-![Amazon ECR](images/ecr.png)
+![Amazon ECR](images/AWS%20Console-%20ECR%20Repo.png)
 
 ---
 
