@@ -158,7 +158,7 @@ eks-cicd-pipeline/
 
 ## GitHub Webhook
 
-![GitHub Webhook](images/GitHub-Webhook.png)
+![GitHub Webhook](images/webhook.png)
 
 ---
 
